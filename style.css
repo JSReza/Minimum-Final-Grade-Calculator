@@ -84,8 +84,13 @@ input[type="number"]:focus {
     font-weight: bold;
     margin-top: 1rem;
     letter-spacing: 1px;
-    background-color: #363636;
+    background-color: #00ff9d;
+    color: #818080;
 }
+.submit-btn:hover{
+    background-color:#00ff9d75;
+}
+
 
 
 .modal {
