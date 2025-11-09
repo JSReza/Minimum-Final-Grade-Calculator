@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimum Final Exam Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <input type="number">Grade So Far
-        <input type ="number">
-        <input type ="radio" value="A+">A+
-        <input type ="radio" value="A">A
-        <input type ="radio">A-
-        <input type ="radio">B+
-        <input type ="radio">B
-        <input type ="radio">B-
-        <input type ="radio">C+
-        <input type ="radio">C
-        <input type ="radio">C-
-        <input type = "submit">
+    <main class = "app">
+    <h2>Minimum Final Grade Calculator needed to pass class</h2>
+    <form id = "form" class = "form">
+        <label for = "current-grade">Grade So Far</label>
+        <input type="number" id = "current-grade">
+        <br/>
+        <label for = "weight">Weight of the final in %:</label>
+        <input type ="number" id = "weight">
+        
+        <input type = "submit" id = "submit-btn">
     </form>
+    <div id = "result"></div>
+    
+    <!-- Modal -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+     </main>
+    <script src="script.js"></script>
 </body>
 </html>
